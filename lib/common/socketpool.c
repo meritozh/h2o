@@ -452,9 +452,6 @@ void h2o_socketpool_connect(h2o_socketpool_connect_request_t **_req, h2o_socketp
     struct pool_entry_t *entry = NULL;
     struct on_close_data_t *close_data;
 
-    if (_req != NULL)
-        *_req = NULL;
-
     size_t target = SIZE_MAX;
     h2o_linklist_t *sockets = NULL;
 
